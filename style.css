@@ -1,0 +1,207 @@
+/* Variáveis CSS */
+:root {
+    --color-primary: #B0A17C;
+    --color-border: #5D584A;
+    --color-background: #17170f;
+    --color-form-bg: #383221;
+    --color-text: #ffffff;
+    --color-text-light: #C2C0BB;
+    --color-placeholder: #666461;
+    --color-count: #888585;
+    --border-radius: 20px;
+    --border-radius-small: 7px;
+    --spacing-xs: 3px;
+    --spacing-sm: 7px;
+    --spacing-md: 10px;
+    --spacing-lg: 15px;
+    --spacing-xl: 20px;
+    --spacing-xxl: 30px;
+    --spacing-form: 50px;
+}
+
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Coustard", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--color-background);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+/* Container do formulário */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    padding: var(--spacing-form);
+    background-color: var(--color-form-bg);
+    border-radius: var(--border-radius);
+}
+
+.form-title {
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-light);
+    font-weight: 900;
+}
+
+/* Campos do formulário */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+}
+
+.form-label {
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.form-control {
+    padding: var(--spacing-sm);
+    background-color: var(--color-form-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+    color: var(--color-text);
+    font-family: "Coustard", serif;
+    font-size: 1rem;
+}
+
+.form-control::placeholder {
+    color: var(--color-placeholder);
+    font-weight: normal;
+}
+
+/* Grid responsivo */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Textarea e contador de caracteres */
+textarea{
+    width: 100%;
+    min-height: 150px;
+    resize: vertical; /* Permite que o usuário ajuste verticalmente */
+    line-height: 1.5;
+}
+.textarea-container {
+    position: relative;
+}
+
+.char-count {
+    font-size: 0.9em;
+    color: var(--color-count);
+    text-align: right;
+    margin-top: var(--spacing-xs);
+}
+
+/* Checkbox personalizado */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.checkbox-custom {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--color-border);
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.checkbox-custom:checked {
+    background-color: var(--color-primary);
+}
+
+.checkbox-custom:checked::after {
+    content: "✓";
+    position: absolute;
+    color: var(--color-form-bg);
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.privacy-text {
+    color: var(--color-text-light);
+}
+
+.privacy-link {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}
+
+/* Botão de submit */
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-xxl);
+}
+
+.submit-button {
+    padding: var(--spacing-md);
+    background-color: var(--color-primary);
+    width: 100%;
+    color: var(--color-text);
+    font-size: 1rem;
+    border-radius: var(--border-radius-small);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #d8caa4;
+    color: var(--color-form-bg);
+}
+
+/* Estilos para selects */
+.form-select {
+    padding: var(--spacing-sm);
+    background-color: var(--color-form-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+    color: var(--color-text);
+    font-family: "Coustard", serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-select option {
+    color: var(--color-text);
+    background-color: var(--color-form-bg);
+}

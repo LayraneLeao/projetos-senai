@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitness Community Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+   
+</head>
+<body>
+    <div class="form-container">
+        <form id="fitnessForm" action="#" method="post">
+            <h1 class="form-title">Join Our Fitness Community</h1>
+            
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-grid">
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Number -->
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Optional">
+                </div>
+
+                <!-- Select Level -->
+                <div class="form-group">
+                    <label for="level" class="form-label">Select Your Level</label>
+                    <select id="level" name="level" class="form-select" required>
+                        <option value="" disabled selected>Choose a level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="trainer">Personal Trainer</option>
+                        <option value="athlete">Professional Athlete</option>
+                    </select>
+                </div>
+
+                <!-- Gift Discount -->
+                <div class="form-group">
+                    <label for="discount" class="form-label">Gift Discount</label>
+                    <select id="discount" name="discount" class="form-select">
+                        <option value="none" selected>No discount</option>
+                        <option value="10">10% Off</option>
+                        <option value="20">20% Off</option>
+                        <option value="freeweek">1 Free Week</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <div class="textarea-container">
+                    <textarea id="message" name="message" class="form-control" maxlength="2000" placeholder="Write your message here..." rows="5"></textarea>
+                    <div id="charCount" class="char-count">0 / 2000 characters</div>
+                </div>
+            </div>
+            
+            <!-- Checkbox -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="privacyPolicy" name="privacyPolicy" class="checkbox-custom" required>
+                <label for="privacyPolicy" class="privacy-text">
+                    I agree to the <a href="#" class="privacy-link">Privacy Policy</a> and <a href="#" class="privacy-link">Terms of Service</a> *
+                </label>
+            </div>
+
+            <div class="submit-container">
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
