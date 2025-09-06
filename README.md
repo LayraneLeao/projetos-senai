@@ -3,6 +3,7 @@
 Este é o primeiro projeto desenvolvido no curso do **Senai**, com foco em **HTML e CSS**.  
 O objetivo foi criar um site fictício para uma **boutique pet**, transmitindo estilo, elegância e praticidade para donos de cães e gatos.  
 
+> Visualize o projeto [aqui!](https://petboutiqueofficial.netlify.app/)
 
 ## Sobre o Projeto  
 O site **Pet Boutique** apresenta:  
@@ -25,7 +26,7 @@ O site **Pet Boutique** apresenta:
 - `style.css` → Estilos do site.  
 - `img/` → Imagens utilizadas (banner, serviços, marcas e redes sociais).  
 
-> Visualize o projeto [aqui!](https://petboutiqueofficial.netlify.app/)
+
 
 ---
 
@@ -34,6 +35,7 @@ O site **Pet Boutique** apresenta:
 Este é o segundo projeto desenvolvido no curso do **Senai**, com foco em **HTML, CSS e JavaScript**.  
 O objetivo foi criar um **formulário moderno e responsivo** para cadastro em uma comunidade fitness.  
 
+> Visualize o projeto [aqui!](https://fitnesscommunityform.netlify.app/)
 
 ## Sobre o Projeto  
 O site **Fitness Community Form** apresenta:  
@@ -57,4 +59,3 @@ O site **Fitness Community Form** apresenta:
 - `script.js` → Lógica do contador e validação do formulário.  
 
 
-> Visualize o projeto [aqui!](https://fitnesscommunityform.netlify.app/)
