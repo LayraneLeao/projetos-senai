@@ -25,8 +25,9 @@ O site **Pet Boutique** apresenta:
 - `style.css` → Estilos do site.  
 - `img/` → Imagens utilizadas (banner, serviços, marcas e redes sociais).  
 
+> Visualize o projeto [aqui!](https://petboutiqueofficial.netlify.app/)
 
-### Visualize o projeto [aqui!]()
+---
 
 # 📌 Projeto 2 - Formulário Fitness  
 
@@ -56,4 +57,4 @@ O site **Fitness Community Form** apresenta:
 - `script.js` → Lógica do contador e validação do formulário.  
 
 
-### Visualize o projeto [aqui!]()
+> Visualize o projeto [aqui!](https://fitnesscommunityform.netlify.app/)
