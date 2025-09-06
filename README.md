@@ -28,3 +28,32 @@ O site **Pet Boutique** apresenta:
 
 ### Visualize o projeto [aqui!]()
 
+# 📌 Projeto 2 - Formulário Fitness  
+
+Este é o segundo projeto desenvolvido no curso do **Senai**, com foco em **HTML, CSS e JavaScript**.  
+O objetivo foi criar um **formulário moderno e responsivo** para cadastro em uma comunidade fitness.  
+
+
+## Sobre o Projeto  
+O site **Fitness Community Form** apresenta:  
+- **Formulário de inscrição** com campos para nome, e-mail, telefone e nível do usuário.  
+- **Seleção de desconto promocional** para novos membros.  
+- **Campo de mensagem** com contador dinâmico de caracteres (até 2000).  
+- **Validação do formulário** (checkbox obrigatório para aceitar Política de Privacidade e Termos de Uso).  
+- **Layout moderno e responsivo**, adaptado para desktop e mobile.  
+
+
+## Tecnologias Utilizadas  
+- **HTML5** → Estrutura do formulário.  
+- **CSS3** → Estilização, cores, tipografia e responsividade.  
+- **JavaScript (ES6)** → Interatividade (contador de caracteres, validação e alerta).  
+- **Google Fonts** → Tipografia personalizada.  
+
+
+## Estrutura de Arquivos  
+- `index.html` → Estrutura principal do formulário.  
+- `style.css` → Estilos visuais e responsividade.  
+- `script.js` → Lógica do contador e validação do formulário.  
+
+
+### Visualize o projeto [aqui!]()
